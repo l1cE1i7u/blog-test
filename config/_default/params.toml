@@ -65,9 +65,16 @@ SortBy             = "default"
 
 [widgets]
     # 首页显示的右侧小组件
-    homepage = ["archives", "categories", "tag-cloud"]
-    # 文章页显示的右侧小组件（如果你想让文章页宽一点，这里可以保持为空 []）
-    page     = ["archives", "categories", "tag-cloud"]
+    homepage = [
+        { type = "search" },
+        { type = "archives" },
+        { type = "categories" },
+        { type = "tag-cloud" }
+    ]
+    # 文章页显示的右侧小组件（通常放一个文章目录 toc 就行）
+    page     = [
+        { type = "toc" }
+    ]
 
 [opengraph.twitter]
     site = ""
