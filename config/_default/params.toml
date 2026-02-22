@@ -17,7 +17,8 @@ SortBy             = "default"
 [sidebar]
     compact = false
     avatar  = "https://raw.githubusercontent.com/l1cE1i7u/8r7-O5gu-rJ/main/c6KCy/20260222081338391.png"
-
+    subtitle = "这里是VCub的炫酷博客~"  # 这里换成你自己的简介
+    emoji = "🎶"  # 你的专属小表情
 [article]
     headingAnchor = true
     math          = true
