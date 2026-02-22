@@ -1,9 +1,9 @@
 mainSections       = ["post"]
 featuredImageField = "image"
 rssFullContent     = true
-# Accepted values: "default", "lastmod"
-# default = see https://gohugo.io/quick-reference/glossary/#default-sort-order
-# lastmod = sort by last modified date, in descending order
+# 可接受的值: "default", "lastmod"
+# default = 参见 https://gohugo.io/quick-reference/glossary/#default-sort-order
+# lastmod = 按最后修改日期降序排列
 SortBy             = "default"
 
 [footer]
@@ -16,47 +16,47 @@ SortBy             = "default"
 
 [sidebar]
     compact = false
-    avatar  = ""
+    avatar  = "https://9o2aakfapy757fnnjqw-1384056078.cos.ap-guangzhou.myqcloud.com/img/20260123141519307.jpg"
 
 [article]
-    headingAnchor = false
-    math          = false
+    headingAnchor = true
+    math          = true
     toc           = true
     readingTime   = true
 
     [article.list]
-        # Showing article tags in the list view (e.g. homepage, section pages)
-        showTags = false
+        # 在列表视图中显示文章标签（例如主页、分类页面）
+        showTags = true
 
     [article.license]
-        enabled = false
+        enabled = true
         default = "Licensed under CC BY-NC-SA 4.0"
 
-    # Mermaid diagram configuration
-    # Diagrams are only loaded when mermaid code blocks are present
-    # Theme auto-switches based on site light/dark mode
+    # Mermaid 图表配置
+    # 仅当存在 mermaid 代码块时才会加载图表
+    # 主题会根据网站的明/暗模式自动切换
     [article.mermaid]
-        # Visual style: classic or handDrawn (sketch style)
+        # 视觉风格: classic (经典) 或 handDrawn (手绘/草图风格)
         look                  = "classic"
-        # Theme for light mode: default, neutral, dark, forest, base, null
+        # 浅色模式的主题: default, neutral, dark, forest, base, null
         lightTheme            = "default"
-        # Theme for dark mode: default, neutral, dark, forest, base, null
+        # 深色模式的主题: default, neutral, dark, forest, base, null
         darkTheme             = "dark"
-        # Custom theme variables for light mode (only works with lightTheme: base)
+        # 浅色模式的自定义主题变量 (仅当 lightTheme 为 base 时生效)
         # lightThemeVariables = { primaryColor = "#ff0000" }
-        # Custom theme variables for dark mode (only works with darkTheme: base)
+        # 深色模式的自定义主题变量 (仅当 darkTheme 为 base 时生效)
         # darkThemeVariables = { primaryColor = "#00ff00" }
-        # Security level: strict (default), loose, antiscript, sandbox
-        # Set to "loose" to enable HTML labels like <br/>
+        # 安全级别: strict (严格, 默认), loose (宽松), antiscript, sandbox
+        # 设置为 "loose" 以启用如 <br/> 这样的 HTML 标签
         securityLevel         = "strict"
-        # Enable HTML labels in diagrams (requires securityLevel: loose)
+        # 在图表中启用 HTML 标签 (需要 securityLevel: loose)
         htmlLabels            = true
-        # Make diagram backgrounds transparent (default: false)
-        # Can also be set per-diagram with %%transparent%% directive
+        # 使图表背景透明 (默认: false)
+        # 也可以使用 %%transparent%% 指令为每个图表单独设置
         transparentBackground = false
 
     [article.alertIcon]
-        # Alert icons for different alert types (note, tip, important, warning, caution)
+        # 不同警告类型的图标 (note/笔记, tip/提示, important/重要, warning/警告, caution/注意)
         note      = "📝"
         tip       = "💡"
         important = "📌"
@@ -81,8 +81,8 @@ SortBy             = "default"
 [imageProcessing.content]
     enabled = true
 
-# GDPR Cookie Consent Configuration
-# When enabled, analytics and functional cookies require user consent
+# GDPR Cookie 同意配置
+# 启用后，分析和功能性 cookie 需要用户同意
 [cookies]
     enabled      = false
     showSettings = true
@@ -128,7 +128,7 @@ SortBy             = "default"
         clientSecret    = ""
         autoCreateIssue = false
 
-    # Waline client configuration see: https://waline.js.org/en/reference/component.html
+    # Waline 客户端配置请参见: https://waline.js.org/en/reference/component.html
     [comments.waline]
         serverURL    = ""
         lang         = ""
@@ -146,11 +146,11 @@ SortBy             = "default"
         path   = ""
         lang   = ""
 
-    # See https://cactus.chat/docs/reference/web-client/#configuration for description of the various options
+    # 各项配置说明请参见 https://cactus.chat/docs/reference/web-client/#configuration
     [comments.cactus]
         defaultHomeserverUrl = "https://matrix.cactus.chat:8448"
         serverName           = "cactus.chat"
-        siteName             = ""  # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
+        siteName             = ""  # 必须填入与您注册时匹配的唯一标识符（参见 https://cactus.chat/docs/getting-started/quick-start/#register-your-site）
 
     [comments.giscus]
         repo             = ""
@@ -179,7 +179,7 @@ SortBy             = "default"
         host = "https://cusdis.com"
         id   = ""
 
-    # Comentario client configuration
+    # Comentario 客户端配置
     [comments.comentario]
         url                   = ""
         autoInit              = false
