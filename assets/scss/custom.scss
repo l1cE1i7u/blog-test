@@ -1,1 +1,17 @@
 /* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+body {
+    /* 这里填你刚才图片的名字，注意前面的斜杠不能少 */
+    background-image: url('/bg.jpg'); 
+    
+    /* 让图片按比例铺满整个屏幕 */
+    background-size: cover; 
+    
+    /* 核心魔法：网页上下滑动时，背景图固定不动，非常有高级感！ */
+    background-attachment: fixed; 
+    
+    /* 图片居中显示 */
+    background-position: center; 
+    
+    /* 图片不重复平铺 */
+    background-repeat: no-repeat; 
+}
