@@ -29,7 +29,7 @@ SortBy             = "default"
         showTags = true
 
     [article.license]
-        enabled = true
+        enabled = false
         default = "Licensed under CC BY-NC-SA 4.0"
 
     # Mermaid 图表配置
@@ -53,7 +53,7 @@ SortBy             = "default"
         htmlLabels            = true
         # 使图表背景透明 (默认: false)
         # 也可以使用 %%transparent%% 指令为每个图表单独设置
-        transparentBackground = false
+        transparentBackground = true
 
     [article.alertIcon]
         # 不同警告类型的图标 (note/笔记, tip/提示, important/重要, warning/警告, caution/注意)
@@ -64,8 +64,10 @@ SortBy             = "default"
         caution   = "🚨"
 
 [widgets]
-    homepage = []
-    page     = []
+    # 首页显示的右侧小组件
+    homepage = ["archives", "categories", "tag-cloud"]
+    # 文章页显示的右侧小组件（如果你想让文章页宽一点，这里可以保持为空 []）
+    page     = ["archives", "categories", "tag-cloud"]
 
 [opengraph.twitter]
     site = ""
